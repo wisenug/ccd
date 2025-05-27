@@ -1,9 +1,12 @@
+
 import React from 'react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="w-[763px] max-w-full text-[#333] text-6xl font-bold leading-[72px] max-md:text-5xl max-md:w-full max-sm:text-[32px] max-sm:leading-[35.2px]">
-      Design studio specializing in digital expericnes, logos &amp; illustrations
+    <section className="mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#333333] leading-tight md:leading-[1.1] max-w-4xl">
+        Design studio specializing in digital experiences, logos & illustrations
+      </h2>
     </section>
   );
 };
