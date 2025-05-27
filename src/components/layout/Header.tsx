@@ -12,17 +12,17 @@ export const Header: React.FC = () => {
             className="w-full h-full object-contain"
           />
         </div>
-        <h1 className="text-lg md:text-xl font-medium text-black">
+        <h1 className="text-lg md:text-xl font-medium text-black font-inter">
           Clayton Cunningham Design
         </h1>
       </div>
       
       <nav className="hidden md:flex items-center gap-8">
         <div className="text-center">
-          <div className="text-[#7A8B5D] font-medium text-lg mb-1">Work</div>
+          <div className="text-[#7A8B5D] font-medium text-lg mb-1 font-inter">Work</div>
           <div className="h-[3px] bg-[#7A8B5D] w-full"></div>
         </div>
-        <div className="text-black font-normal text-lg hover:font-bold transition-all duration-200 cursor-pointer">About</div>
+        <div className="text-black font-normal text-lg hover:font-semibold transition-all duration-200 cursor-pointer font-inter">About</div>
       </nav>
     </header>
   );

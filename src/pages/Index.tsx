@@ -7,7 +7,7 @@ import { ProjectGrid } from '@/components/home/ProjectGrid';
 
 const Index: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-white font-inter">
       <div className="max-w-[1200px] mx-auto px-5 md:px-6">
         <Header />
         <Hero />
