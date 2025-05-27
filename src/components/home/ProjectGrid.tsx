@@ -10,7 +10,7 @@ export const ProjectGrid: React.FC = () => {
         {projects.map((_, index) => (
           <div
             key={index}
-            className="aspect-[4/3.5] bg-gradient-to-br from-[#C8E6A0] to-[#A8D670] rounded-lg relative overflow-hidden"
+            className="aspect-[4/3.5] bg-gradient-to-br from-[#C8E6A0] to-[#A8D670] relative overflow-hidden"
             style={{
               backgroundImage: `
                 repeating-conic-gradient(
