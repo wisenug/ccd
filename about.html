@@ -102,9 +102,11 @@
 
         .hero-image {
             aspect-ratio: 1;
-            object-fit: contain;
+            object-fit: cover;
             width: 342px;
+            max-width: 342px;
             min-width: 240px;
+            border-radius: 50%;
         }
 
         .hero-text {
@@ -115,7 +117,7 @@
         /* Services Section */
         .services {
             width: 100%;
-            margin-top: 30px;
+            margin-top: 60px;
             padding: 2.5rem 0;
         }
 
@@ -124,32 +126,32 @@
             font-size: 1.5rem;
             font-weight: 600;
             line-height: 1;
+            margin-bottom: 2rem;
         }
 
         .services-grid {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
             width: 100%;
-            gap: 2.75rem;
             font-size: 1.125rem;
             color: black;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
         }
 
         .service-column {
-            min-width: 152px;
+            flex: 1;
         }
 
         .service-column h3 {
             font-weight: 600;
             font-size: 1.125rem;
             line-height: 1;
+            margin-bottom: 1rem;
         }
 
         .service-items {
             font-weight: normal;
             line-height: 27px;
-            margin-top: 0.5rem;
         }
 
         /* Contact Section */
@@ -160,7 +162,7 @@
             flex-direction: column;
             align-items: stretch;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 60px;
             padding: 2.5rem 1.5rem;
             border-radius: 1rem;
         }
@@ -233,6 +235,9 @@
             .hero {
                 font-size: 2.5rem;
                 line-height: 44px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
 
             .hero-text {
@@ -240,12 +245,24 @@
                 line-height: 44px;
             }
 
+            .hero-image {
+                width: 280px;
+                max-width: 280px;
+            }
+
             .navbar {
                 gap: 20px 50px;
             }
 
             .services-grid {
-                gap: 1.5rem;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
     </style>
@@ -276,15 +293,14 @@
             <!-- Hero Section -->
             <section class="hero">
                 <img
-                    src="https://cdn.builder.io/api/v1/image/assets/2f2535c707814cc885fe7452f4cc8940/e40b6b295e1ac04f71ee4adbead41ffa6babd055?placeholderIfAbsent=true"
+                    src="/lovable-uploads/c6abf0a4-bb8f-4731-b39a-dd7603db67df.png"
                     alt="Clayton Cunningham"
                     class="hero-image"
                 />
                 <div class="hero-text">
                     I'm Clayton Cunningham — Designer and illustrator in Atlanta, GA 🍑.
                     <br />
-                    Currently working as a Senior UX Desinger at Cox Automotive-
-                    Autotrader and Kelley Blue Book.
+                    Currently working as a Senior UX Designer at Cox Automotive- Autotrader and Kelley Blue Book.
                 </div>
             </section>
 
