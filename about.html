@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clayton Cunningham Design - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem;
+            overflow: hidden;
+            padding-top: 2.5rem;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            min-height: 86px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0.5rem 0;
+            gap: 40px 100px;
+        }
+
+        .navbar-brand {
+            display: flex;
+            min-width: 240px;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.125rem;
+            color: black;
+            font-weight: bold;
+            line-height: 1.2;
+            text-decoration: none;
+        }
+
+        .navbar-logo {
+            width: 70px;
+            height: 70px;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2.5rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .nav-item-active {
+            color: rgba(122, 139, 93, 1);
+            font-weight: bold;
+            text-align: center;
+            width: 68px;
+        }
+
+        .nav-underline {
+            background-color: rgba(122, 139, 93, 1);
+            height: 3px;
+            width: 100%;
+            margin-top: 0.375rem;
+        }
+
+        .nav-item {
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            width: 100%;
+            gap: 35px;
+            font-size: 3.75rem;
+            color: rgba(51, 51, 51, 1);
+            font-weight: 600;
+            line-height: 60px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .hero-image {
+            aspect-ratio: 1;
+            object-fit: contain;
+            width: 342px;
+            min-width: 240px;
+        }
+
+        .hero-text {
+            min-width: 240px;
+            flex: 1;
+        }
+
+        /* Services Section */
+        .services {
+            width: 100%;
+            margin-top: 30px;
+            padding: 2.5rem 0;
+        }
+
+        .services-title {
+            color: rgba(51, 51, 51, 1);
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .services-grid {
+            display: flex;
+            width: 100%;
+            gap: 2.75rem;
+            font-size: 1.125rem;
+            color: black;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .service-column {
+            min-width: 152px;
+        }
+
+        .service-column h3 {
+            font-weight: 600;
+            font-size: 1.125rem;
+            line-height: 1;
+        }
+
+        .service-items {
+            font-weight: normal;
+            line-height: 27px;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: rgba(161, 197, 101, 1);
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: stretch;
+            text-align: center;
+            margin-top: 30px;
+            padding: 2.5rem 1.5rem;
+            border-radius: 1rem;
+        }
+
+        .contact-content {
+            width: 100%;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .contact-title {
+            color: black;
+            font-size: 1.75rem;
+        }
+
+        .contact-subtitle {
+            color: rgba(51, 51, 51, 1);
+            font-size: 1.125rem;
+            margin-top: 1rem;
+        }
+
+        .contact-button {
+            align-self: center;
+            background-color: black;
+            color: white;
+            min-height: 48px;
+            width: 210px;
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-top: 35px;
+            padding: 15px 1rem;
+            border: none;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .contact-button:hover {
+            background-color: #333;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            font-size: 1.125rem;
+            color: rgba(117, 117, 117, 1);
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.2;
+            margin-top: 30px;
+            padding-top: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .footer-year {
+            font-weight: 600;
+            letter-spacing: -0.18px;
+        }
+
+        .footer-text {
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.25rem;
+            }
+
+            .hero {
+                font-size: 2.5rem;
+                line-height: 44px;
+            }
+
+            .hero-text {
+                font-size: 2.5rem;
+                line-height: 44px;
+            }
+
+            .navbar {
+                gap: 20px 50px;
+            }
+
+            .services-grid {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">
+                <img
+                    src="https://cdn.builder.io/api/v1/image/assets/2f2535c707814cc885fe7452f4cc8940/d87e6d95fa063e16753b160281da115406d6a1d5?placeholderIfAbsent=true"
+                    alt="Clayton Cunningham Design Logo"
+                    class="navbar-logo"
+                />
+                <span>Clayton Cunningham Design</span>
+            </a>
+            
+            <div class="navbar-nav">
+                <div class="nav-item-active">
+                    <div>Work</div>
+                    <div class="nav-underline"></div>
+                </div>
+                <a href="#" class="nav-item">About</a>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <img
+                    src="https://cdn.builder.io/api/v1/image/assets/2f2535c707814cc885fe7452f4cc8940/e40b6b295e1ac04f71ee4adbead41ffa6babd055?placeholderIfAbsent=true"
+                    alt="Clayton Cunningham"
+                    class="hero-image"
+                />
+                <div class="hero-text">
+                    I'm Clayton Cunningham — Designer and illustrator in Atlanta, GA 🍑.
+                    <br />
+                    Currently working as a Senior UX Desinger at Cox Automotive-
+                    Autotrader and Kelley Blue Book.
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services">
+                <h2 class="services-title">Services & Skills</h2>
+                <div class="services-grid">
+                    <div class="service-column">
+                        <h3>Brand Design</h3>
+                        <div class="service-items">
+                            Brand Strategy<br />
+                            Visual Identity<br />
+                            Logo Design<br />
+                            Brand Guidelines<br />
+                            Packaging Design
+                        </div>
+                    </div>
+                    <div class="service-column">
+                        <h3>Content Design</h3>
+                        <div class="service-items">
+                            Art Direction<br />
+                            Product Illustrations<br />
+                            Editorial Illustrations<br />
+                            Custom Icon Sets<br />
+                            Animations & Microinteractions
+                        </div>
+                    </div>
+                    <div class="service-column">
+                        <h3>Digital Design</h3>
+                        <div class="service-items">
+                            Website Design<br />
+                            UI/UX Design<br />
+                            Mobile App Design<br />
+                            Prototyping
+                        </div>
+                    </div>
+                    <div class="service-column">
+                        <h3>Print & Merchandise</h3>
+                        <div class="service-items">
+                            Apparel<br />
+                            Posters<br />
+                            Prints<br />
+                            Stickers<br />
+                            Greeting & Business Cards
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact">
+                <div class="contact-content">
+                    <h2 class="contact-title">Ready to make something cool?</h2>
+                    <p class="contact-subtitle">
+                        I'd love to hear about your project. Contact me to schedule a
+                        consultation.
+                    </p>
+                </div>
+                <button class="contact-button" onclick="handleContact()">
+                    Drop me a line
+                </button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span class="footer-year">© <span id="current-year"></span> </span>
+            <span class="footer-text">Clayton Cunningham Design. All rights reserved.</span>
+        </footer>
+    </div>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Handle contact button click
+        function handleContact() {
+            window.location.href = "mailto:contact@claytoncunningham.design";
+        }
+    </script>
+</body>
+</html>
