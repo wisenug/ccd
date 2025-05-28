@@ -29,7 +29,7 @@ body {
   padding-top: 2.5rem;
 }
 
-/* Header/Navbar Styles */
+/* Header/Navbar Styles - Unified for both pages */
 .header {
   display: flex;
   justify-content: space-between;
@@ -81,6 +81,7 @@ body {
   object-fit: contain;
 }
 
+/* Unified company name styling */
 .company-name {
   font-size: 1.125rem;
   font-weight: 500;
@@ -89,6 +90,7 @@ body {
   line-height: 1.2;
 }
 
+/* Unified navigation styling */
 .nav,
 .navbar-nav {
   display: flex;
@@ -108,33 +110,33 @@ body {
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: inherit;
+  color: black;
+  font-weight: 500;
 }
 
 .nav-text {
   font-size: 1.125rem;
   font-family: 'Inter', system-ui, sans-serif;
   color: black;
-  font-weight: 400;
+  font-weight: 500;
   transition: font-weight 0.2s ease;
 }
 
-.navbar-nav .nav-item {
-  color: black;
-  font-weight: 500;
-  text-decoration: none;
+/* Active state styling - unified */
+.nav-item.active,
+.nav-item-active {
+  color: rgba(122, 139, 93, 1);
+  font-weight: 600;
+  text-align: center;
 }
 
 .nav-item-active {
-  color: rgba(122, 139, 93, 1);
-  font-weight: bold;
-  text-align: center;
   width: 4.25rem;
 }
 
 .nav-item.active .nav-text {
   color: #7A8B5D;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .nav-underline {
@@ -355,6 +357,7 @@ body {
   .hero-text {
     font-size: 2.5rem;
     line-height: 2.75rem;
+    text-align: right;
   }
 
   .hero-image {
@@ -368,7 +371,7 @@ body {
 
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
