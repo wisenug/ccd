@@ -14,6 +14,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     
+    <link rel="icon" href="/lovable-uploads/e63e1a0d-17df-41cf-b2fb-aac91f87a495.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -84,14 +85,17 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p class="footer-text">
-          © 2025 Clayton Cunningham Design. All rights reserved.
-        </p>
+        <span class="footer-year">© <span id="current-year"></span> </span>
+        <span class="footer-text">Clayton Cunningham Design. All rights reserved.</span>
       </footer>
     </div>
 
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script src="script.js"></script>
+    <script>
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
