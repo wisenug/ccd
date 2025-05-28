@@ -20,7 +20,7 @@
         }
 
         .container {
-            max-width: 1280px;
+            max-width: 80rem;
             margin: 0 auto;
             padding: 2rem;
             overflow: hidden;
@@ -31,30 +31,30 @@
         .navbar {
             background-color: rgba(255, 255, 255, 0.8);
             display: flex;
-            min-height: 86px;
+            min-height: 5.375rem;
             width: 100%;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
             padding: 0.5rem 0;
-            gap: 40px 100px;
+            gap: 2.5rem 6.25rem;
         }
 
         .navbar-brand {
             display: flex;
-            min-width: 240px;
+            min-width: 15rem;
             align-items: center;
             gap: 1rem;
             font-size: 1.125rem;
             color: black;
-            font-weight: bold;
+            font-weight: 500;
             line-height: 1.2;
             text-decoration: none;
         }
 
         .navbar-logo {
-            width: 70px;
-            height: 70px;
+            width: 4.375rem;
+            height: 4.375rem;
             aspect-ratio: 1;
             object-fit: contain;
         }
@@ -71,12 +71,12 @@
             color: rgba(122, 139, 93, 1);
             font-weight: bold;
             text-align: center;
-            width: 68px;
+            width: 4.25rem;
         }
 
         .nav-underline {
             background-color: rgba(122, 139, 93, 1);
-            height: 3px;
+            height: 0.1875rem;
             width: 100%;
             margin-top: 0.375rem;
         }
@@ -91,33 +91,33 @@
         .hero {
             display: flex;
             width: 100%;
-            gap: 35px;
+            gap: 2.1875rem;
             font-size: 3.75rem;
             color: rgba(51, 51, 51, 1);
             font-weight: 600;
-            line-height: 60px;
+            line-height: 3.75rem;
             flex-wrap: wrap;
-            margin-top: 30px;
+            margin-top: 1.875rem;
         }
 
         .hero-image {
             aspect-ratio: 1;
             object-fit: cover;
-            width: 342px;
-            max-width: 342px;
-            min-width: 240px;
+            width: 21.375rem;
+            max-width: 21.375rem;
+            min-width: 15rem;
             border-radius: 50%;
         }
 
         .hero-text {
-            min-width: 240px;
+            min-width: 15rem;
             flex: 1;
         }
 
         /* Services Section */
         .services {
             width: 100%;
-            margin-top: 60px;
+            margin-top: 3.75rem;
             padding: 2.5rem 0;
         }
 
@@ -131,7 +131,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
             gap: 3rem;
             width: 100%;
             font-size: 1.125rem;
@@ -151,7 +151,7 @@
 
         .service-items {
             font-weight: normal;
-            line-height: 27px;
+            line-height: 1.6875rem;
         }
 
         /* Contact Section */
@@ -162,7 +162,7 @@
             flex-direction: column;
             align-items: stretch;
             text-align: center;
-            margin-top: 60px;
+            margin-top: 3.75rem;
             padding: 2.5rem 1.5rem;
             border-radius: 1rem;
         }
@@ -188,20 +188,21 @@
             align-self: center;
             background-color: black;
             color: white;
-            min-height: 48px;
-            width: 210px;
+            min-height: 3rem;
+            width: 13.125rem;
             font-size: 1.125rem;
             font-weight: bold;
-            margin-top: 35px;
-            padding: 15px 1rem;
+            margin-top: 2.1875rem;
+            padding: 0.9375rem 1rem;
             border: none;
             border-radius: 0.375rem;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: all 0.2s;
         }
 
         .contact-button:hover {
-            background-color: #333;
+            background-color: white;
+            color: black;
         }
 
         /* Footer */
@@ -212,14 +213,14 @@
             font-weight: bold;
             text-align: center;
             line-height: 1.2;
-            margin-top: 30px;
+            margin-top: 1.875rem;
             padding-top: 2.5rem;
             padding-bottom: 1.5rem;
         }
 
         .footer-year {
             font-weight: 600;
-            letter-spacing: -0.18px;
+            letter-spacing: -0.01125rem;
         }
 
         .footer-text {
@@ -227,14 +228,14 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 48rem) {
             .container {
                 padding: 1.25rem;
             }
 
             .hero {
                 font-size: 2.5rem;
-                line-height: 44px;
+                line-height: 2.75rem;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
@@ -242,16 +243,16 @@
 
             .hero-text {
                 font-size: 2.5rem;
-                line-height: 44px;
+                line-height: 2.75rem;
             }
 
             .hero-image {
-                width: 280px;
-                max-width: 280px;
+                width: 17.5rem;
+                max-width: 17.5rem;
             }
 
             .navbar {
-                gap: 20px 50px;
+                gap: 1.25rem 3.125rem;
             }
 
             .services-grid {
@@ -260,7 +261,7 @@
             }
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: 64rem) {
             .services-grid {
                 grid-template-columns: repeat(4, 1fr);
             }
