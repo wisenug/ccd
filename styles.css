@@ -29,7 +29,7 @@ body {
   padding-top: 2.5rem;
 }
 
-/* Header/Navbar Styles - Unified for both pages */
+/* Header/Navbar Styles - Unified for all pages */
 .header {
   display: flex;
   justify-content: space-between;
@@ -66,6 +66,7 @@ body {
 .logo-container {
   width: 3rem;
   height: 3rem;
+  flex-shrink: 0;
 }
 
 .navbar-logo {
@@ -188,6 +189,235 @@ body {
 .hero-text {
   min-width: 15rem;
   flex: 1;
+}
+
+/* Project Page Styles */
+.project-hero {
+  margin-bottom: 4rem;
+}
+
+.project-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  color: #666666;
+  line-height: 1.6;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+}
+
+.project-hero-image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.project-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-overview {
+  margin-bottom: 4rem;
+}
+
+.project-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-overview-item {
+  text-align: center;
+}
+
+.project-overview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-overview-caption {
+  font-size: 1rem;
+  color: #666666;
+  font-weight: 500;
+}
+
+.project-description {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.project-description-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.2;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.project-details {
+  margin-bottom: 4rem;
+}
+
+.project-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.project-details-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.project-details-text {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.design-system {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 4rem 2rem;
+  margin: 4rem -2rem;
+  border-radius: 1rem;
+}
+
+.design-system-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.design-system-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.design-system-item {
+  text-align: center;
+}
+
+.design-system-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #333333;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.design-system-item-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.design-system-item-description {
+  font-size: 0.875rem;
+  color: #cccccc;
+}
+
+.project-results {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.project-results-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+
+.project-results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-results-item {
+  text-align: center;
+}
+
+.project-results-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.project-results-description {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.platform-overview {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.platform-overview-text {
+  font-size: 1.125rem;
+  color: #666666;
+  line-height: 1.6;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.related-projects {
+  margin-bottom: 4rem;
+}
+
+.related-projects-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.related-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.related-project-item {
+  text-align: center;
+}
+
+.related-project-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.related-project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0.25rem;
+}
+
+.related-project-description {
+  font-size: 0.875rem;
+  color: #666666;
 }
 
 /* Project Grid */
@@ -351,7 +581,7 @@ body {
     line-height: 2.75rem;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-text {
@@ -371,7 +601,37 @@ body {
 
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2.5rem 0;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-description-title {
+    font-size: 1.75rem;
+  }
+
+  .project-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-details-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .design-system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-results-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .related-projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -417,6 +677,26 @@ body {
 
   .footer-text {
     font-size: 1rem;
+  }
+
+  .project-overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .design-system-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .related-projects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
