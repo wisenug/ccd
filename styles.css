@@ -98,7 +98,7 @@ body {
 }
 
 .hero-title {
-  font-size: 2.17rem;
+  font-size: 1.84rem;
   color: #333333;
   line-height: 1.2;
   max-width: 64rem;
@@ -119,38 +119,15 @@ body {
 
 .project-item {
   aspect-ratio: 4/3.5;
-  background: linear-gradient(135deg, #C8E6A0 0%, #A8D670 100%);
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
-.project-item::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    repeating-conic-gradient(
-      from 0deg at 50% 50%,
-      #C8E6A0 0deg 90deg,
-      #A8D670 90deg 180deg,
-      #C8E6A0 180deg 270deg,
-      #A8D670 270deg 360deg
-    );
-  background-size: 20px 20px;
-}
-
-.project-item::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0.6;
-  background-image: 
-    linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
-  background-size: 10px 10px;
-  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Footer */
@@ -194,7 +171,7 @@ body {
   }
 
   .hero-title {
-    font-size: 3.61rem;
+    font-size: 3.07rem;
     line-height: 1.1;
   }
 
@@ -218,7 +195,7 @@ body {
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 4.34rem;
+    font-size: 3.69rem;
   }
 
   .grid {
