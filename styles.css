@@ -547,7 +547,7 @@ body {
 }
 
 .footer-year {
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.01125rem;
 }
 
@@ -587,8 +587,8 @@ body {
   }
 
   .hero-image {
-    width: 17.5rem;
-    max-width: 17.5rem;
+    width: 21rem;
+    max-width: 21rem;
   }
 
   .navbar {
