@@ -1,3 +1,4 @@
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -55,6 +56,14 @@ body {
   gap: 0.75rem;
   text-decoration: none;
   color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.logo-section:hover,
+.navbar-brand:hover {
+  background-color: #EDEDED;
 }
 
 .navbar-brand {
@@ -126,6 +135,7 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   color: black;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 /* Active state styling - unified */
@@ -137,6 +147,10 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 0.5rem 1rem;
+}
+
+.nav-item.active:hover .nav-text {
+  color: #507D06;
 }
 
 .nav-item-active {
@@ -182,8 +196,8 @@ body {
 .hero-image {
   aspect-ratio: 1;
   object-fit: cover;
-  width: 25.65rem;
-  max-width: 25.65rem;
+  width: 30.78rem;
+  max-width: 30.78rem;
   min-width: 15rem;
   border-radius: 50%;
 }
@@ -595,8 +609,8 @@ body {
   }
 
   .hero-image {
-    width: 25.2rem;
-    max-width: 25.2rem;
+    width: 30.24rem;
+    max-width: 30.24rem;
   }
 
   .navbar {
@@ -645,7 +659,7 @@ body {
   }
 
   .header {
-    padding: 2rem 0;
+    padding: 2.5rem 0 1.5rem 0;
   }
 
   .logo-container {
