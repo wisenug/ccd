@@ -1,4 +1,3 @@
-
 /* Reset and base styles */
 * {
   margin: 0;
@@ -24,7 +23,7 @@ body {
 .container-about {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   overflow: hidden;
   padding-top: 2.5rem;
 }
@@ -56,7 +55,7 @@ body {
   gap: 0.75rem;
   text-decoration: none;
   color: inherit;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 0;
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
@@ -72,14 +71,14 @@ body {
 }
 
 .logo-container {
-  width: 3rem;
-  height: 3rem;
+  width: 4.2rem;
+  height: 4.2rem;
   flex-shrink: 0;
 }
 
 .navbar-logo {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 6.125rem;
+  height: 6.125rem;
   aspect-ratio: 1;
   object-fit: contain;
 }
@@ -571,10 +570,12 @@ body {
 .footer-year {
   font-weight: 400;
   letter-spacing: -0.01125rem;
+  font-size: 1.125rem;
 }
 
 .footer-text {
   font-weight: 400;
+  font-size: 1.125rem;
 }
 
 /* Remove old footer styles */
@@ -592,6 +593,16 @@ body {
 @media (max-width: 48rem) {
   .container-about {
     padding: 1.25rem;
+    padding-top: 2.5rem;
+  }
+
+  .header {
+    padding: 2.5rem 0 1.5rem 0;
+  }
+
+  .logo-container {
+    width: 4.2rem;
+    height: 4.2rem;
   }
 
   .hero-about {
@@ -663,8 +674,8 @@ body {
   }
 
   .logo-container {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.9rem;
+    height: 4.9rem;
   }
 
   .company-name {
